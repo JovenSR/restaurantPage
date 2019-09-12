@@ -8,7 +8,10 @@ function pageLoad() {
 	const contact = document.createElement('button');
 	const about = document.createElement('button');
 	const divContent = document.createElement('div');
-	divContent.classList.add('divContent');
+
+	menu.innerHTML = 'Menu';
+	contact.innerHTML = 'Contact';
+	about.innerHTML = 'About';
 
 	div.appendChild(menu);
 	div.appendChild(about);
@@ -19,6 +22,7 @@ function pageLoad() {
 	contact.setAttribute('id', 'contact');
 	about.setAttribute('id', 'about');
 	div.classList.add('div');
+	divContent.classList.add('divContent');
 
 	image.src = 'pic.jpg';
 	h1.innerHTML = 'Welcome to Restaurant';
