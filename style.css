@@ -51,4 +51,39 @@ h1 {
 	display: none;
 	background: white;
 	grid-column: 1 / span 3;
+	color: #666666;
+	font-size: 18px;
+	padding: 20px;
+	border-radius: 2.5px;
+	border: 1px solid #efefef;
+	box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+	position: relative;
+	animation-name: animatetop;
+  	animation-duration: 0.4s
 }
+
+@keyframes animatetop {
+  from {top: -30px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+button {
+	color: #444444;
+	padding: 10px;
+	font-family: 'Garamond', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	border: 1px solid #efefef;
+	border-radius: 2.5px;
+	box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+  	position: relative;
+}
+
+button:hover,
+button:focus {
+  	background: darken(#e76c67, 10%);
+  	border: 1px solid darken(#e76c67, 10%);
+  	box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.8);
+}
+
